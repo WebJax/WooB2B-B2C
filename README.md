@@ -1,41 +1,55 @@
-# WooCommerce B2B/B2C Hybrid Plugin
+# WooCommerce B2B & B2C Plugin
 
-Et fleksibelt WooCommerce-plugin, der giver mulighed for en hybrid B2B/B2C-løsning med genbestilling, kundespecifikke rabatter, RFQ (Request for Quote), rollebaserede priser og meget mere.
+## Beskrivelse
+Dette WooCommerce-plugin giver mulighed for at håndtere både B2B- og B2C-kunder på en fleksibel måde. Det inkluderer rollebaserede priser, rabatter, tilbudsanmodninger (RFQ), avanceret ordrehåndtering og API-integrationer til eksterne systemer.
 
-## 🚀 Funktioner
+## Funktioner
 
-### ✅ Genbestilling (Reorder)
-- Hurtig genbestilling af tidligere ordrer direkte fra **"Min konto"** eller produktsider.
-- AJAX-understøttet tilføjelse til kurven.
+### 1. Kundegrupper & Roller
+- Oprettelse af tilpassede roller (f.eks. forhandlere, engroskunder, VIP-kunder).
+- Automatisk tildeling af en rolle baseret på e-mail-domæne.
+- Mulighed for at skjule priser for gæster eller kræve login for at se B2B-priser.
 
-### 📊 Antalsbaserede rabatter
-- Mængderabatter baseret på købte antal.
-- Understøtter både procentuelle og faste rabatter.
-- Dynamisk prisberegning i produktvisning og checkout.
+### 2. Differentierede Priser
+- Antalsbaserede rabatter (f.eks. 10% rabat ved køb af 10 stk.).
+- Rollebaserede priser, så B2B-kunder får lavere priser end B2C.
+- Kundespecifikke priser for individuelle virksomheder.
 
-### 👥 Rollebaserede rabatter
-- Rabatter og priser tilpasset brugerroller (**B2B, B2C, grossist osv.**).
-- Regler kan opsættes pr. produktkategori eller specifikt produkt.
+### 3. Request for Quote (RFQ)
+- B2B-kunder kan anmode om et tilbud i stedet for at købe direkte.
+- Administrator kan justere pris og sende et tilpasset tilbud.
+- Integration med WooCommerce-ordresystemet, så tilbud kan konverteres til ordrer.
 
-### 📝 Request for Quote (RFQ)
-- Mulighed for at anmode om tilbud i stedet for at gennemføre et normalt køb.
-- Tilbudsadministration via WooCommerce-backend.
-- E-mail-notifikationer til kunder om tilbudsstatus.
+### 4. Moms, Fakturering & Betalingsmuligheder
+- Automatisk fradrag af moms for B2B-kunder med gyldigt CVR/VAT-nummer.
+- Integration med regnskabs- og faktureringssystemer (f.eks. e-conomic, Dinero).
+- Mulighed for at aktivere faktura-betaling for B2B-kunder.
+- Forskellige leveringsmetoder baseret på kundegruppe (f.eks. gratis fragt for B2B-kunder).
+- Opsætning af minimumsbeløb for B2B-ordrer.
 
-### 🔑 Custom brugerroller
-- Opret og administrer brugerroller direkte i pluginets indstillinger.
-- Tildel specifikke rabatter og betingelser til hver rolle.
-- Mulighed for at begrænse adgang til produkter eller priser baseret på rolle.
+### 5. Skjulte Produkter & Kategorier
+- Vise bestemte produkter kun for B2B eller B2C-kunder.
+- Mulighed for at skjule priser for gæster og kræve login for at se priser.
 
-### 💰 Prisvisning & Moms-håndtering
-- Dynamisk prisvisning baseret på kundegruppe (**inkl. eller ekskl. moms**).
+### 6. Ordrehåndtering & Engrosfunktioner
+- Hurtig bestillingsformular til B2B-kunder (Excel-lignende UI).
+- Genbestillingsfunktion, så en B2B-kunde hurtigt kan gentage tidligere ordrer.
+- Mulighed for ordre-godkendelse, hvor administrator skal bekræfte en B2B-ordre.
 
-### 🛒 Minimal Checkout for B2B
-- Forenklet checkout for B2B-kunder.
-- Understøttelse af fakturabetaling og **EAN-fakturering**.
+### 7. Brugeroplevelse & UI
+- Dedikeret B2B-dashboard med ordrehistorik, fakturaer og genbestilling.
+- Minimal checkout til hurtigere ordreafgivelse for B2B.
+- Integration med sprogfunktioner for at understøtte international handel.
 
----
+### 8. API & Integrationer
+- Synkronisering med ERP-systemer for lager- og prishåndtering.
+- Webhooks og REST API for integration med eksterne systemer.
+- Mulighed for at synkronisere kundespecifikke priser fra eksterne databaser.
 
-## 🛠 Installation
+## Installation
+1. Upload pluginet til `/wp-content/plugins/`.
+2. Aktiver pluginet via WordPress-administrationen.
+3. Konfigurer indstillingerne under WooCommerce → B2B/B2C Indstillinger.
 
-1. Download plugin-filerne
+## Support
+Har du spørgsmål eller brug for support? Kontakt os via support@jaxweb.dk.
